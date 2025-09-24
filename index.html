@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XchangeOn Livraria Ciência Moderna - Especializada em Livros Científicos</title>
+    <meta name="description" content="XchangeOn Livraria Ciência Moderna - Há mais de 50 anos oferecendo os melhores livros científicos e acadêmicos. Encontre obras de diversas áreas do conhecimento.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #1a5276;
+            --secondary-color: #f39c12;
+            --accent-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(26, 82, 118, 0.8), rgba(26, 82, 118, 0.9)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #154360;
+            border-color: #154360;
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #e67e22;
+            border-color: #e67e22;
+            color: white;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        
+        .xchangeon-btn {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+            font-weight: 500;
+        }
+        
+        .xchangeon-btn:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+            color: white;
+        }
+        
+        .xchangeon-text {
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="xchangeon-text">XchangeOn</span> Livraria Ciência Moderna
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home <span class="xchangeon-text">XchangeOn</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre <span class="xchangeon-text">XchangeOn</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos <span class="xchangeon-text">XchangeOn</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato <span class="xchangeon-text">XchangeOn</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn xchangeon-btn ms-2" href="#login">Login <span class="xchangeon-text">XchangeOn</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 mb-4"><span class="xchangeon-text">XchangeOn</span> Livraria Ciência Moderna</h1>
+                    <p class="lead mb-4">Há mais de 50 anos conectando mentes curiosas ao conhecimento científico</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-3">
+                        <a href="#produtos" class="btn btn-primary btn-lg">Conheça Nossos Livros <span class="xchangeon-text">XchangeOn</span></a>
+                        <a href="#sobre" class="btn btn-secondary btn-lg">Sobre a <span class="xchangeon-text">XchangeOn</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Sobre a <span class="xchangeon-text">XchangeOn</span> Livraria Ciência Moderna</h2>
+                    <p class="mb-4">A empresa <span class="highlight">XchangeOn Livraria Ciência Moderna LTDA</span>, fundada em <span class="highlight">01 de setembro de 1971</span> na cidade do <span class="highlight">Rio de Janeiro</span>, tem como atividade principal o <span class="highlight">comércio varejista de livros</span>, com ênfase em obras científicas e acadêmicas.</p>
+                    <p class="mb-4">Com mais de cinco décadas de atuação no mercado, nos consolidamos como referência na distribuição de livros técnicos, científicos e acadêmicos, atendendo universidades, pesquisadores, estudantes e entusiastas do conhecimento.</p>
+                    <p class="mb-4">Nossa missão é facilitar o acesso ao conhecimento científico de qualidade, oferecendo um acervo diversificado e atualizado das principais editoras nacionais e internacionais.</p>
+                    <a href="#contato" class="btn xchangeon-btn">Entre em Contato <span class="xchangeon-text">XchangeOn</span></a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Interior da Livraria XchangeOn" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="section-title">Por que Escolher a <span class="xchangeon-text">XchangeOn</span>?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <i class="bi bi-book feature-icon"></i>
+                    <h4>Acervo Especializado</h4>
+                    <p>Mais de 10.000 títulos científicos e acadêmicos das principais áreas do conhecimento.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="bi bi-truck feature-icon"></i>
+                    <h4>Entrega Rápida</h4>
+                    <p>Entregamos em todo o Brasil com prazos reduzidos e condições especiais para instituições.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="bi bi-award feature-icon"></i>
+                    <h4>Reconhecimento</h4>
+                    <p>Mais de 50 anos de experiência no mercado editorial científico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <h2 class="section-title">Nossos Destaques <span class="xchangeon-text">XchangeOn</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Livros de Ciências">
+                        <div class="card-body">
+                            <h5 class="card-title">Ciências Exatas e da Terra</h5>
+                            <p class="card-text">Matemática, Física, Química, Geologia e áreas afins.</p>
+                            <a href="#" class="btn xchangeon-btn">Ver Catálogo <span class="xchangeon-text">XchangeOn</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Livros de Biologia">
+                        <div class="card-body">
+                            <h5 class="card-title">Ciências Biológicas e da Saúde</h5>
+                            <p class="card-text">Biologia, Medicina, Enfermagem, Farmácia e áreas correlatas.</p>
+                            <a href="#" class="btn xchangeon-btn">Ver Catálogo <span class="xchangeon-text">XchangeOn</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1588666309990-d68f08e3d4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Livros de Humanidades">
+                        <div class="card-body">
+                            <h5 class="card-title">Humanidades e Ciências Sociais</h5>
+                            <p class="card-text">Filosofia, Sociologia, História, Psicologia e áreas relacionadas.</p>
+                            <a href="#" class="btn xchangeon-btn">Ver Catálogo <span class="xchangeon-text">XchangeOn</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Junte-se a Mais de 500 Instituições que Confiam na <span class="xchangeon-text">XchangeOn</span></h2>
+            <p class="lead mb-4">Oferecemos condições especiais para universidades, bibliotecas e instituições de pesquisa.</p>
+            <a href="#contato" class="btn btn-light btn-lg">Solicitar Orçamento Institucional <span class="xchangeon-text">XchangeOn</span></a>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <h2 class="section-title">Entre em Contato <span class="xchangeon-text">XchangeOn</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="assunto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn xchangeon-btn">Enviar Mensagem <span class="xchangeon-text">XchangeOn</span></button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Informações de Contato</h5>
+                            <p><i class="bi bi-geo-alt"></i> Rio de Janeiro, RJ</p>
+                            <p><i class="bi bi-telephone"></i> (21) XXXX-XXXX</p>
+                            <p><i class="bi bi-envelope"></i> contato@xchangeoncienciamoderna.com.br</p>
+                            <p><i class="bi bi-clock"></i> Segunda a Sexta: 9h às 18h</p>
+                            <hr>
+                            <h6>CNPJ: 33.412.271/0001-03</h6>
+                            <p>Fundada em 01/09/1971</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login <span class="xchangeon-text">XchangeOn</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Lembrar-me</label>
+                        </div>
+                        <button type="submit" class="btn xchangeon-btn w-100">Entrar <span class="xchangeon-text">XchangeOn</span></button>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <p class="mb-0">Não tem uma conta? <a href="#" class="xchangeon-text">Cadastre-se</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><span class="xchangeon-text">XchangeOn</span> Livraria Ciência Moderna</h5>
+                    <p>Há mais de 50 anos levando conhecimento científico de qualidade para todo o Brasil.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white-50">Home</a></li>
+                        <li><a href="#sobre" class="text-white-50">Sobre</a></li>
+                        <li><a href="#produtos" class="text-white-50">Produtos</a></li>
+                        <li><a href="#contato" class="text-white-50">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Categorias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Ciências Exatas</a></li>
+                        <li><a href="#" class="text-white-50">Ciências Biológicas</a></li>
+                        <li><a href="#" class="text-white-50">Humanidades</a></li>
+                        <li><a href="#" class="text-white-50">Lançamentos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50">Receba nossas novidades e promoções</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Seu e-mail">
+                        <button class="btn xchangeon-btn" type="button">Inscrever</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-0 mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 <span class="xchangeon-text">XchangeOn</span> Livraria Ciência Moderna. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">CNPJ: 33.412.271/0001-03</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Ativar modal de login quando o link for clicado
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginLinks = document.querySelectorAll('a[href="#login"]');
+            loginLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+                    loginModal.show();
+                });
+            });
+            
+            // Smooth scroll para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
